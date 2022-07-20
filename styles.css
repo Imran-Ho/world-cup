@@ -15,6 +15,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 5%;
 }
 .container{
     display: grid;
@@ -22,7 +23,7 @@ main{
     padding: 0% 10%;
     background-color: black;
     color: white;
-    margin: 5% 10%;
+    margin: 5% 5%;
     border-radius: 2%;   
 }
 .first-title{
@@ -58,23 +59,23 @@ h1{
 
 
 /* product */
-.product-title{
+.match-info{
     text-align: center;
     font-weight: 700;
 }
 .side-bar{
     display: flex;
     width:var(--side-width);
-    padding-left: 10%;
+    padding: 0 5%;
+    gap: 10%;
 
 }
 .side-items{
     background-color: black;
     height: 300px;
-    margin: 10px;
     display: grid;
     grid-template-columns: 200px;
-    padding: 0 40px;
+    padding: 0 10%;
     border-radius: 5px;
 
 }
@@ -95,17 +96,16 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     width: calc(100% - var(--side-width));
-    padding-right: 10%;
 }
 .matches .match > img{
-    width: 224px;
+    width: 240px;
     height: 120px;
     padding-bottom: 20px;
 }
 .match{
     background-color: rgb(245, 235, 235);
-    margin: 5px;
     padding: 10px 10px;
+    margin: 5% 0;
 }
 .match-btn{
     padding: 5px 10px;
@@ -132,6 +132,7 @@ footer {
     text-align: center;
     padding: 5% 0;
     margin-top: 5%;
+    width: 100%;
 }
 .footer-title >h2{
     font-size: 40px;
@@ -146,7 +147,12 @@ footer {
     text-decoration: none;
     font-size: 15px;
     color: white;
-    padding: 10% 2%;
+    padding: 5% 2%;
+}
+.footer-social-items>a{
+    padding: 1% 2%;
+    color: white;
+    padding: 5% 2%;
 }
 
 
@@ -159,14 +165,36 @@ footer {
     }
     .container{
         grid-template-columns: repeat(1,1fr);
-        
+        flex-direction: column;
+        align-items: center;
     }
-    .logos{
-        grid-template-columns: repeat(4,1fr);
-    }
-    .products{
+    .side-bar{
         grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
+    .matches {
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        width: 100%;
+    }
+    .footer-nav-bar{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        padding-top: 5%;
+    }
+    .footer-social-items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        padding-top: 5%;
+    }
+
 }
 @media screen and (min-width:689px) and (max-width:900px){
     main {
