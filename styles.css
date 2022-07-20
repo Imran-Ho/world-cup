@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
 }
 body{
     background-color: lightgoldenrodyellow;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* first-section-styles */
@@ -61,7 +63,8 @@ h1{
 } 
 
 
-/* product */
+/* match-blog */
+
 .match-info{
     text-align: center;
     font-weight: 700;
@@ -148,6 +151,13 @@ h1{
     color: white;
 }
 
+/*---------------- match-summary-
+------------------------------------------ */
+
+
+
+
+
 /* footer-styles */
 
 
@@ -163,6 +173,7 @@ footer {
     font-weight: 700;
     color: white;
     padding-top: 2%;
+    padding-bottom: 2%;
 }
 .footer-nav-bar{
     padding: 2% 0;
