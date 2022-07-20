@@ -51,10 +51,15 @@ main{
 .first-image{
     width: 100%;
     padding-top: 10%;
+   
+}
+.first-image:hover{
+    height: 80%;
 }
 .first-image img{
     width: 100%;
     height: 100%;
+    transition: height 5s linear;
    
 }
 h1{  
