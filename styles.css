@@ -112,6 +112,9 @@ h1{
     margin: 20px 0px;
     padding: 20px 20px;
 }
+.side-items>div>a:hover {
+    background-color: rgb(192, 11, 11);
+}
 
 .matches{
     display: grid;
@@ -165,13 +168,6 @@ h1{
     color: white;
 }
 
-/*---------------- match-summary-
------------------------------------------- */
-
-
-
-
-
 /* footer-styles */
 
 
@@ -208,10 +204,11 @@ hr {
     margin-right: 25%;
 }
 
-/* media query */
+/* ---------------media query 
+---------------------------------*/
 
 
-@media screen and (max-width:688px) {
+@media screen and (max-width:576px) {
     main {
         width: auto;
     }
@@ -227,9 +224,7 @@ hr {
         align-items: center;
         width: auto;
     }
-    .side-items{
-        background-color: black;
-    }
+   
     .matches {
         grid-template-columns: repeat(1,1fr);
         flex-direction: column;
@@ -256,7 +251,7 @@ hr {
     }
 
 }
-@media screen and (min-width:689px) and (max-width:900px){
+@media screen and (min-width:577px) and (max-width:900px){
     main {
         width: auto;
     }
@@ -272,10 +267,11 @@ hr {
     }
     .side-items{
         display: flex;
-        flex-wrap: nowrap;
         justify-content:space-around ;
         gap: 10px;
-        height: 100px;
+        height: 90px;
+        text-align: center;
+        font-size: 25px;
     }
     .side-items>div>a{
         border: 1px solid lightslategray;
